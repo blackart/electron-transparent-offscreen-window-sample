@@ -1,0 +1,21 @@
+{
+ "name": "mobalitycs-demo-client",
+ "version": "1.0.0",
+ "description": "mobalitycs-demo-client",
+ "main": "app.js",
+ "license": "MIT",
+ "scripts": {
+  "start": "electron app.js",
+  "pack": "build --dir",
+  "dist": "build"
+ },
+ "build": {
+  "appId": "yourappid",
+  "win": {
+   "target": "NSIS"
+  }
+ },
+ "devDependencies": {
+  "electron": "^9.3.0"
+ }
+}
